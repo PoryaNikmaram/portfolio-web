@@ -1,0 +1,147 @@
+.container {
+    max-width: var(--max-width);
+    margin: auto;
+    overflow: hidden;
+}
+
+.current {
+    border-bottom: 3px #ffbc00 solid;
+}
+
+.current:hover {
+    border-bottom: 3px #ffbc00 solid !important;
+}
+
+
+/* Home-info */
+
+.home-info {
+    position: relative;
+    text-align: center;
+    padding: 45px 0;
+}
+
+.home-info .container>div {
+    position: relative;
+    margin: auto;
+    width: 500px;
+}
+
+.home-info .container>div::before {
+    content: '';
+    position: absolute;
+    left: 40%;
+    bottom: -8px;
+    width: 20%;
+    height: 3px;
+    background-color: #ffbc00;
+}
+
+.home-info h2 {
+    font-size: 22px;
+    margin-top: 30px;
+}
+
+
+/* Btn & Bg */
+
+.btn {
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: var(--light-color);
+    font-size: 17px;
+    cursor: pointer;
+    transition: background-color ease 0.4s;
+    border: none;
+}
+
+.btn:hover {
+    background-color: var(--primary-color);
+}
+
+.btn-dark {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.btn-dark:hover {
+    background-color: var(--primary-color);
+    color: #333;
+}
+
+.bg-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.bg-dark {
+    background-color: #333;
+    color: #fff;
+}
+
+.white {
+    color: #fff !important;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+
+/* Boxes */
+
+.boxes {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.boxes>div {
+    padding: 10px;
+}
+
+.boxes i {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.boxes h2 {
+    font-weight: bolder;
+}
+
+.boxes p {
+    font-size: 18px;
+}
+
+
+/* Box-2 */
+
+.boxes-2 {
+    display: flex;
+}
+
+.boxes-2 i {
+    margin-bottom: 10px;
+}
+
+.boxes-2 h2 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.boxes-2>div {
+    width: 25%;
+    text-align: center;
+    padding: 55px 30px;
+    margin-top: 35px;
+}
+
+.boxes-2>div:nth-child(even) {
+    background-color: #ccc;
+}
+
+.boxes-2>div:nth-child(odd) {
+    background-color: #eee;
+}
